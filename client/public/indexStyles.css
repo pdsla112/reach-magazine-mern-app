@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+  }
+
+  
+html, body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+    scroll-behavior: smooth;
+    top: 0;
+    background-color: #222831;
+}
+
+ul {
+    list-style: none;
+}
+
+p, a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* p {
+    font-size: 1.1vw;
+} */
+
+/* h1 {
+    font-size: 1.2vw;
+} */
+
+.header-wrapper {
+    grid-area: header;
+    background-color: #f8b595;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    /* width: 100%; */
+    height: 27vh;
+}
+
+.navbar-social-wrapper {
+    display: flex;
+}
+
+.navbar-social-logo {
+    width: 2em;
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+.navbar-wrapper {
+    /* grid-area: navbar; */
+    -webkit-transform: translate3d(-105%, 0px, 0px);
+    transform: translate3d(-105%, 0px, 0px);
+    visibility: visible;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    background-color: #dddddd;
+    top: 27vh;
+    bottom: 0;
+    /* height: 100vh; */
+    width: 230px;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    -moz-box-shadow:    0px 3px 5px 6px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0px 3px 5px 6px rgba(0,0,0,.4);
+    box-shadow:         0px 3px 5px 6px rgba(0,0,0,.4);
+    grid-row-start: 2;
+    z-index: 100;
+    /* overflow: hidden; */
+}
+
+.open-navbar {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+    visibility: visible;
+    width: 230px;
+}
+
+.logged-off-navbar {
+    display: none;
+}
+
+.logged-on-navbar {
+    
+}
+
+.urgent-wrapper {
+    grid-area: urgent;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 0.01fr auto;  /* Used to be 200px */
+    width: 100%;
+    /* width: 80%; */
+}
+
+.economics-home-wrapper {
+    grid-area: economics;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 0.01fr auto; 
+    width: 100%;
+}
+
+.finance-home-wrapper {
+    grid-area: finance;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 0.01fr auto; 
+    width: 100%;
+}
+
+.medicine-home-wrapper {
+    grid-area: medicine;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 0.01fr auto; 
+    width: 100%;
+}
+
+.moneywise-home-wrapper {
+    grid-area: moneywise;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 0.01fr auto; 
+    width: 100%;
+}
+
+.tech-home-wrapper {
+    grid-area: technology;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 0.01fr auto; 
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.footer-wrapper {
+    grid-area: footer;
+    background-color: #dddddd;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    width: 100%;
+}
+
+.home-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        'header         header         header         header         header         header         header'
+        'urgent         urgent         urgent         urgent         urgent         urgent         urgent'
+        'economics      economics      economics      economics      economics      economics   economics'
+        'finance        finance        finance        finance        finance        finance       finance'
+        'medicine       medicine       medicine       medicine       medicine       medicine     medicine'
+        'moneywise      moneywise      moneywise      moneywise      moneywise      moneywise   moneywise'
+        'technology     technology     technology     technology     technology     technology technology'
+        'footer         footer         footer         footer         footer         footer         footer';
+    
+    grid-template-rows: 0.2fr repeat(6, 1fr) 0.4fr;   /* Used to have 167px for header */
+    grid-template-columns: repeat(7, 1fr);    /* Used to be repeat(7, 1fr) */
+    /* grid-row-gap: 70px; */
+}
