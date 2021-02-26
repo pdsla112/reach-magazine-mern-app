@@ -72,7 +72,7 @@ class Navbar extends React.Component {
     }
 
     getLogState() {
-        axios.get(`${process.env.PORT}/authchecker`, {withCredentials:true})
+        axios.get(`http://localhost:4000/authchecker`, {withCredentials:true})
             .then(res => {
                 console.log(res.data);
                 if (res.data.msg === "Admin Authenticated Successfully") {

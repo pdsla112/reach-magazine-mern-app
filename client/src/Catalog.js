@@ -19,7 +19,7 @@ class Catalog extends React.Component {
 
     displayCards() {
         const section = this.props.section;
-        axios.get(`${process.env.PORT}/section/` + section)
+        axios.get('http://localhost:4000/section/' + section)
             .then(res => {
                 console.log("This is res.data:");
                 console.log(res.data);
