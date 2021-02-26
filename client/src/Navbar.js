@@ -53,7 +53,7 @@ class Navbar extends React.Component {
     handleLogout(evt) {
         evt.preventDefault();
         axios.defaults.withCredentials = true;
-        axios.delete("http://localhost:4000/logging-out", {withCredentials:true})
+        axios.delete("/logging-out", {withCredentials:true})
             .then(() => {
                 this.setState({
                     logState: false,
@@ -72,7 +72,7 @@ class Navbar extends React.Component {
     }
 
     getLogState() {
-        axios.get(`http://localhost:4000/authchecker`, {withCredentials:true})
+        axios.get(`/authchecker`, {withCredentials:true})
             .then(res => {
                 console.log(res.data);
                 if (res.data.msg === "Admin Authenticated Successfully") {
