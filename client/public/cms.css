@@ -1,0 +1,440 @@
+.cms-form-box {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dddddd;
+}
+
+.cms-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 6em;
+    row-gap: 30px;
+    margin-bottom: 12em;
+    background-color: #dddddd;
+}
+
+.cms-form-top-section {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 0.8fr 0.2fr;
+    grid-template-rows: auto;
+}
+
+.cms-form-content-section {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.8fr;
+    grid-template-rows: auto;
+}
+
+.cms-form-section-section {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.8fr;
+    grid-template-rows: auto;
+}
+
+.cms-form-heading-section {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.cms-form-summary-section {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.cms-form-image-section {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px;
+}
+
+.cms-form-reference-section {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.cms-form-article-section {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 3em;
+}
+
+.cms-form-image-label {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.cms-image-input {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.cms-image-preview-container {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.cms-image-preview {
+    width: 80%;
+}
+
+.cms-reference-label {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.cms-reference-txt-box {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.cms-heading {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.cms-submit-btn {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    background-color: #cf1b1b;
+    border-radius: 0.5em;
+    color: #fff;
+    border: none;
+    width: auto;
+    margin: auto;
+}
+
+.cms-submit-btn:hover {
+    background-color: #fff;
+    color: #cf1b1b;
+}
+
+.cms-form-label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cms-form-content-label {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.cms-form-content-selection {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-left: 10px;
+}
+
+.cms-form-section-label {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.cms-form-section-selection {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-left: 10px;
+}
+
+.cms-form-heading-label {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.cms-heading-txt-box {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.cms-form-summary-label {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.cms-summary-txt-box {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.cms-form-article-label {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.cms-article-txt-box {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 700px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* The section below is for the delete form of the CMS. */
+
+.delete-form-section-sorter {
+    display: inline-flex;
+    width: 100%;
+    /* margin-right: auto;
+    margin-left: auto; */
+    padding-top: 6em;
+}
+
+.delete-form-section-sorter-dropdown {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 80%;
+}
+
+.cms-sort-btn {
+    height: 100%;
+    cursor: pointer;
+    background-color: #cf1b1b;
+    border-radius: 0.5em;
+    color: #fff;
+    border: none;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 0.5%;
+    font-size: 0.8em;
+}
+
+.cms-sort-btn:hover {
+    background-color: #fff;
+    color: #cf1b1b;
+}
+
+.cms-delete-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: auto; */
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 6em;
+    row-gap: 30px;
+    margin-bottom: 12em;
+}
+
+.cms-delete-form-data {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-template-columns: 0.9fr 0.1fr;
+    grid-template-rows: auto;
+    row-gap: 30px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    width: 100%;
+}
+
+.cms-delete-form-data-specific {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    /* width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content; */
+    /* overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto; */
+    word-break: break-all;
+    white-space: pre-wrap;
+}
+
+.cms-delete-btn {
+    /* grid-column: 2 / 3;
+    grid-row: 1 / 2; */
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    background-color: #cf1b1b;
+    border-radius: 0.5em;
+    color: #fff;
+    border: none;
+    width: auto;
+    margin: auto;
+}
+
+.cms-delete-btn:hover {
+    background-color: #fff;
+    color: #cf1b1b;
+}
+
+.cms-delete-form-data-specific-type-label {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #dddddd;
+}
+
+.cms-delete-form-data-specific-type {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #fff;
+}
+
+.cms-delete-form-data-specific-date-label {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    background-color: #dddddd;
+}
+
+.cms-delete-form-data-specific-date{
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    background-color: #fff;
+}
+
+.cms-delete-form-data-specific-section-label {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+    background-color: #dddddd;
+}
+
+.cms-delete-form-data-specific-section {
+    grid-column: 1 / 2;
+    grid-row: 6 / 7;
+    background-color: #fff;
+}
+
+.cms-delete-form-data-specific-title-label {
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
+    background-color: #dddddd;
+}
+
+.cms-delete-form-data-specific-title {
+    grid-column: 1 / 2;
+    grid-row: 8 / 9;
+    background-color: #fff;
+}
+
+.cms-delete-form-data-specific-summary-label {
+    grid-column: 1 / 2;
+    grid-row: 9 / 10;
+    background-color: #dddddd;
+}
+
+.cms-delete-form-data-specific-summary {
+    grid-column: 1 / 2;
+    grid-row: 10 / 11;
+    background-color: #fff;
+}
+
+.cms-delete-form-data-specific-image-label {
+    grid-column: 1 / 2;
+    grid-row: 11 / 12;
+    background-color: #dddddd;
+}
+
+.cms-delete-form-data-specific-image {
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row: 12 / 13;
+    background-color: #fff;
+}
+
+.cms-delete-form-data-specific-image-image {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dddddd;
+}
+
+.cms-delete-form-data-specific-reference-label {
+    grid-column: 1 / 2;
+    grid-row: 13 / 14;
+    background-color: #dddddd;
+}
+
+.cms-delete-form-data-specific-reference {
+    grid-column: 1 / 2;
+    grid-row: 14 / 15;
+    background-color: #fff;
+}
+
+.cms-delete-form-data-specific-content-label {
+    grid-column: 1 / 2;
+    grid-row: 15 / 16;
+    background-color: #dddddd;
+}
+
+.cms-delete-form-data-specific-content {
+    grid-column: 1 / 2;
+    grid-row: 16 / 17;
+    background-color: #fff;
+}
+
+.cms-delete-form-data-specific-btn-box {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: #dddddd;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE STYLES FOR CMS DELETE FORM FROM HERE ON... */
+
+@media only screen and (max-width: 950px) {
+    .delete-form-section-sorter-dropdown {
+        margin-left: auto;
+    }
+}
+
+@media only screen and (max-width: 804px) {
+    .cms-delete-btn {
+        font-size: 1vw;
+    }
+}
