@@ -20,7 +20,7 @@ export default class Delete extends React.Component {
     } 
 
     updateArticles(section) {
-        axios.get('http://localhost:4000/content-management-system/delete/section/' + section.toLowerCase())
+        axios.get('/content-management-system/delete/section/' + section.toLowerCase())
             .then(res => {
                 console.log("This is res.data:");
                 console.log(res.data);
@@ -37,7 +37,7 @@ export default class Delete extends React.Component {
     deleteArticle(evt, id) {
         evt.preventDefault();
         console.log("Delete this: " + id);
-        axios.delete(`http://localhost:4000/content-management-system/delete/${id}`)
+        axios.delete(`/content-management-system/delete/${id}`)
             .then(res => {
                 console.log(res.data);
                 this.updateArticles(this.state.sorter);
