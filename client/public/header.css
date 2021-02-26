@@ -1,0 +1,123 @@
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.subscription-ad-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #dddddd;
+    border-bottom: 1px solid black;
+}
+
+.subscription-ad-words {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.2vw;
+}
+
+.logo-bar-wrapper {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    background-color: #dddddd;
+}
+
+.logo-bar-newsletter {
+    display: flex;
+    margin-left: 4em;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* font-size: 0.9vw; */
+}
+
+.logo-bar-logo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: center;
+    /* font-size: 2vw; */
+    margin: auto;
+}
+
+.logo-bar-subscribe {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+}
+
+.logo-bar-subscribe-btn {
+    background-color: #cf1b1b;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.2em;
+    /* height: 60%; */
+    height: 2.5vw;
+    width: 20%;
+    color: #fff;
+    border: none;
+    font-size: 0.9vw;
+}
+
+.logo-bar-subscribe-btn:hover {
+    background-color: #fff;
+    cursor: pointer;
+    color: #cf1b1b;
+}
+
+.important-bar-wrapper {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    background-color: #293462;
+    -moz-box-shadow:    0px 3px 5px 6px rgba(0,0,0,.4);
+    -webkit-box-shadow: 0px 3px 5px 6px rgba(0,0,0,.4);
+    box-shadow:         0px 3px 5px 6px rgba(0,0,0,.4);
+}
+
+.important-bar-burger-btn {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.important-bar-links {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    /* font-size: 0.8em; */
+    display: inline-flex;
+    color: #dddddd;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 0.8vw;
+}
+
+.important-links {
+    margin-right: 0.5vh;
+    margin-left: 0.5vh;
+}
+
+.important-bar-search {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+}
+
+.important-bar-user-profile {
+    color: #dddddd;
+    font-size: 0.8vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 60%;
+}
