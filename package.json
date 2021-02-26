@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node backend/server/index.js",
+    "backend": "nodemon backend/server/index.js",
+    "frontend": "npm run front --prefix client",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix client && npm run build --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pdsla112/reach-magazine-mern-app.git"
   },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "author": "Phillip La",
   "license": "ISC",
   "bugs": {
