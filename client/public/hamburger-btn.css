@@ -1,0 +1,59 @@
+.hamburger-btn-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;  /* Used to be 80px */
+    height: 40px;  /* Used to be 80px */
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    /* border: 3px solid black; */
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    margin-left: 4em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.hamburger-btn {
+    width: 30px;  /* Used to be 60px */
+    height: 4px;  /* Used to be 6px */
+    background-color: #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.1s ease-in-out;
+}
+
+.hamburger-btn::before, .hamburger-btn::after {     /* change from "::" to ":" for all for browsers that do not recognise, such as those lower than IE8 */
+    position: absolute;
+    content: '';
+    width: 30px;  /* Used to be 60px */
+    height: 4px;  /* Used to be 6px */
+    background-color: #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.hamburger-btn::before {
+    transform: translateY(-7px); /* Used to be -16px; */
+}
+
+.hamburger-btn::after {
+    transform: translateY(7px);  /* Used to be 16px; */
+}
+
+/* BUTTON ANIMATION */
+.open > .hamburger-btn {
+    transform: translateX(-50px); /* Used to be -50px */
+    background: transparent;
+    box-shadow: none;
+}
+
+.open > .hamburger-btn::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}
+
+.open > .hamburger-btn::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+}
