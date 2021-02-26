@@ -1,0 +1,19 @@
+.subscription-ad-btn {
+    cursor: pointer;
+    background-color: #cf1b1b;
+    grid-column: 3 / 4;
+    justify-self: flex-start;
+    align-self: center;
+    border-radius: 5em;
+    color: #fff;
+    border: none;
+    /* height: 60%; */
+    height: 2.5vw;
+    width: 40%;
+    font-size: 1vw;
+}
+
+.subscription-ad-btn:hover {
+    background-color: #fff;
+    color: #cf1b1b;
+}
