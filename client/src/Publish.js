@@ -61,7 +61,7 @@ export default class Publish extends React.Component {
 
         console.log(formData);
         
-        axios.post('http://localhost:4000/content-management-system/add', formData, config)
+        axios.post('/content-management-system/add', formData, config)
             .then(res => console.log(res.data))
             .catch(err => {
                 console.log(err);

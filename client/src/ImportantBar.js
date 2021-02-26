@@ -18,7 +18,7 @@ class ImportantBar extends React.Component {
     }
 
     getUserDetails() {
-        axios.get("http://localhost:4000/authchecker", {withCredentials:true})
+        axios.get("/authchecker", {withCredentials:true})
             .then(res => {
                 console.log(res.data);
                 if (res.data.msg === "Admin Authenticated Successfully") {

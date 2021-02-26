@@ -27,7 +27,7 @@ class HomeSection extends React.Component {
     }
 
     renderArticles() {
-        axios.get(`http://localhost:4000/home/${this.state.section}`)
+        axios.get(`/home/${this.state.section}`)
             .then(res => {
                 const articles = res.data;
                 const latestArticle = articles.shift();

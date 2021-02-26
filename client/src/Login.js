@@ -59,7 +59,7 @@ class Login extends React.Component {
             user_username: this.state.user_username,
             user_password: this.state.user_password
         };
-        axios.post("http://localhost:4000/logging-on", logonDetails, {withCredentials:true})
+        axios.post("/logging-on", logonDetails, {withCredentials:true})
             .then(res => {
                 console.log("Successfully sent user logon details to server.");
                 if (res.data.msg === "Logged In Successfully") {

@@ -134,14 +134,14 @@ class Signup extends React.Component {
             user_mobile: this.state.mobileNum
         }
 
-        axios.post("http://localhost:4000/signup", user, {withCredentials:true})
+        axios.post("/signup", user, {withCredentials:true})
             .then(() => {
                 console.log("User data successfully sent to server for processing into new account...");
                 const logonDetails = {
                     user_username: user.user_username,
                     user_password: user.user_password
                 };
-                axios.post("http://localhost:4000/logging-on", logonDetails, {withCredentials:true})
+                axios.post("/logging-on", logonDetails, {withCredentials:true})
                     .then(() => {
                         console.log("Logging newly registered user into their account...");
                         this.props.history.push(`/`);

@@ -26,7 +26,7 @@ class IndividualArticle extends React.Component {
     }
 
     renderArticle() {
-        axios.get(`http://localhost:4000/individual-articles/${this.state.article_id}`)
+        axios.get(`/individual-articles/${this.state.article_id}`)
             .then(res => {
                 const article = res.data;
                 this.setState({
