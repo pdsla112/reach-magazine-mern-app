@@ -4,9 +4,6 @@ import HomeSection from "./HomeSection";
 
 class FinanceHome extends React.Component {
     _isMounted = false;
-    constructor(props) {
-        super(props);
-    }
 
     async componentDidMount() {
         this._isMounted = true;
