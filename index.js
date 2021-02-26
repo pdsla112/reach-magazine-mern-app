@@ -22,7 +22,10 @@ function getRandomSecret() {
 
 app.use('/images', express.static(path.join(__dirname, '/images')));
 
-app.use(helmet());
+// app.use(helmet());
+app.use(helmet({
+    contentSecurityPolicy: false,
+  }));
 
 // app.use(cors({
 //     origin: 'https://dry-cove-41912.herokuapp.com',
