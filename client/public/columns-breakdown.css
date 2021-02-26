@@ -1,0 +1,25 @@
+.home-column-1-img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 18.35vw;
+}
+
+.home-column-1-caption {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+}
+
+.home-column-2-img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 18.35vw;
+}
+
+.home-column-2-caption {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+}
