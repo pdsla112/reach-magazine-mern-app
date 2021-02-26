@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const mongoose = require("mongoose");
-let articleSchema = require('../models/article.model');
+let articleSchema = require('../models/articleModel.js');
 const conn = mongoose.createConnection(process.env.MONGO_ARTICLE_URI, { useNewUrlParser: true, useUnifiedTopology: true, dbName: "articleDB" });
 const Article = conn.model("article", articleSchema, "article");
 

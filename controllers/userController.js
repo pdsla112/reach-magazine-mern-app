@@ -4,7 +4,7 @@ app.disable('x-powered-by');
 const mongoose = require('mongoose');
 const bcrypt = require("bcrypt");
 
-let userSchema = require('../models/user.model');
+let userSchema = require('../models/userModel.js');
 const conn2 = mongoose.createConnection(process.env.MONGO_USER_URI, { useNewUrlParser: true, useUnifiedTopology: true, dbName: "userDB" });
 const User = conn2.model("user", userSchema, "user");
 
