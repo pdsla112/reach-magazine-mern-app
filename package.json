@@ -8,7 +8,7 @@
     "backend": "nodemon index.js",
     "frontend": "npm run front --prefix client",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix client && npm run build --prefix client",
-    "build": "set INLINE_RUNTIME_CHUNK=false react-scripts build",
+    "build": "cross-env INLINE_RUNTIME_CHUNK=false react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +30,7 @@
     "body-parser": "^1.19.0",
     "connect-mongodb-session": "^2.4.1",
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "crypto-random-string": "^3.3.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
