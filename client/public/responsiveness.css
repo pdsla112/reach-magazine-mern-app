@@ -1,0 +1,179 @@
+@media only screen and (max-width: 900px) {
+    .hamburger-btn-box {
+        justify-content: flex-start;
+        align-items: center; /* vertical */
+        /* margin-left: 4em; */
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .logo-bar-newsletter {
+        font-size: 0.5em;
+    }
+
+    .column-heading {
+        font-size: 1em;
+    }
+    
+    .column-text {
+        font-size: 1em;
+    }
+    
+    .feature-title {
+        font-size: 1.2em;
+    }
+    
+    .feature-text {
+        font-size: 1em;
+    }
+
+    .logo-bar-subscribe-btn {
+        width: auto;
+        height: auto;
+        font-size: 0.3em;
+    }
+
+    .logo-bar-logo {
+        font-size: 1.2em;
+    }
+
+    .footer-logo {
+        font-size: 2em;
+    }
+
+    .footer-socials {
+        width: 2em;
+    }
+
+    .footer-navlink {
+        font-size: 0.2em;
+    }
+
+    .footer-terms {
+        font-size: 0.2em;
+        line-height: 3em;
+    }
+
+    #home-wrapper-mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr repeat(6, 1fr) 0.4fr;
+        grid-template-areas:
+            'header'
+            'urgent'
+            'economics'
+            'finance'
+            'medicine'
+            'moneywise'
+            'technology'
+            'footer';
+    }
+
+    #urgent-mobile-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.01fr auto;
+        width: 100%;
+    }
+
+    #economics-mobile-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.01fr auto;
+        width: 100%;
+    }
+
+    #finance-mobile-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.01fr auto;
+        width: 100%;
+    }
+
+    #medicine-mobile-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.01fr auto;
+        width: 100%;
+    }
+
+    #moneywise-mobile-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.01fr auto;
+        width: 100%;
+    }
+
+    #tech-mobile-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.01fr auto;
+        width: 100%;
+    }
+
+    .home-heading {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 100%;
+    }
+
+    .home-content-box {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .home-feature {
+        display: grid;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        width: 100%;
+    }
+
+    .home-columns {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .home-column-1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .home-column-2 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .home-feature-img {
+        height: 60vw;
+    }
+
+    .home-column-1-img {
+        height: 60vw;
+    }
+
+    .home-column-2-img {
+        height: 60vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .important-bar-links {
+        display: none;
+    }
+
+    .hamburger-btn-box {
+        /* margin-left: 12%; */
+        margin-left: 1.5em;
+    }
+
+    .section-header-subscribe-btn {
+        margin-right: 5em;
+    }
+}
