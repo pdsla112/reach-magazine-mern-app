@@ -11,7 +11,9 @@ const randomInt = require("random-int");
 const session = require("express-session");
 const MongoDBStore = require("connect-mongodb-session")(session);
 
-const { App } = require( './client/src/index.js' ); 
+const { App } = require( './client/src/App.js' ); 
+
+app.get( /\.(js|css|map|ico)$/, express.static( path.resolve( __dirname, './client' ) ) );
 
 require('dotenv').config();
 
