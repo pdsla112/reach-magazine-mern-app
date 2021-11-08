@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/pdsla112/reach-magazine-mern-app#readme",
   "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "@babel/register": "^7.16.0",
