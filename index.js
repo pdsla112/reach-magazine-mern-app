@@ -11,10 +11,10 @@ const randomInt = require("random-int");
 const session = require("express-session");
 const MongoDBStore = require("connect-mongodb-session")(session);
 
-import React from 'react';
-import ReactDOMServer from 'react-dom/server';
+const React = require('react');
+const ReactDOMServer = require('react-dom/server');
 
-import App from './client/src/App';
+const App = require('./client/src/App');
 
 require('@babel/register')({
     ignore: [/(node_module)/],
