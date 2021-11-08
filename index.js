@@ -74,12 +74,14 @@ app.use('/', articleRoutes);
 app.use('/', userRoutes);
 
 if (process.env.NODE_ENV === 'production') {
-    fs.readFile(path.resolve(__dirname, "client", "build", "index.html"), 'utf-8', (err, data) => {
-        if (err) {
-            return res.status(500).send("Some error happened! Check it out");
-        }
-        res.send(data.replace('<div id="root"></div>', `<div id="root">${ReactDOMServer.renderToString(<App />)}</div>`));
-    });
+    app.use(express.static("client/build"), (req, res) => {
+        fs.readFile(path.resolve(__dirname, "client", "build", "index.html"), 'utf-8', (err, data) => {
+            if (err) {
+                return res.status(500).send("Some error happened! Check it out");
+            }
+            res.send(data.replace('<div id="root"></div>', `<div id="root">${ReactDOMServer.renderToString(<App />)}</div>`));
+        });
+    })
     /*
     app.use(express.static("client/build"));
     app.get('*', (req, res) => {
@@ -88,7 +90,7 @@ if (process.env.NODE_ENV === 'production') {
     */
 }
 
-app.use(express.static("client/build"));
+//app.use(express.static("client/build"));
 
 const PORT = process.env.PORT || 4000;
 
