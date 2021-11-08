@@ -13,7 +13,7 @@ const MongoDBStore = require("connect-mongodb-session")(session);
 
 const { App } = require( './client/src/App.js' ); 
 
-app.get( /\.(js|css|map|ico)$/, express.static( path.resolve( __dirname, './client' ) ) );
+app.get( /\.(js|css)$/, express.static( path.resolve( __dirname, './client' ) ) );
 
 require('dotenv').config();
 
@@ -67,7 +67,7 @@ app.use('/', userRoutes);
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static("client/build"));
     app.get('*', (req, res) => {
-        let indexHTML = fs.readFileSync( path.resolve( __dirname, './client/public/index.html' ), {
+        let indexHTML = fs.readFileSync( path.resolve( __dirname, "client", "build", "index.html" ), {
             encoding: 'utf8',
         } );
         let appHTML = ReactDOMServer.renderToString( <App /> );
