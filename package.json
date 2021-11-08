@@ -9,7 +9,8 @@
     "frontend": "npm run front --prefix client",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix client && npm run build --prefix client",
     "build": "cross-env INLINE_RUNTIME_CHUNK=false react-scripts build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ssr": "node index-helper.js"
   },
   "repository": {
     "type": "git",
@@ -45,5 +46,11 @@
   "engines": {
     "node": "12.16.2",
     "npm": "7.5.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.0",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/register": "^7.16.0",
+    "ignore-styles": "^5.0.1"
   }
 }
