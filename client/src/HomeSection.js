@@ -17,15 +17,6 @@ class HomeSection extends React.Component {
         this.redirectToSection = this.redirectToSection.bind(this);
     }
 
-    async componentDidMount() {
-        this._isMounted = true;
-        await this.renderArticles();
-    }
-    
-    componentWillUnmount() {
-        this._isMounted = false;
-    }
-
     renderArticles() {
         axios.get(`/home/${this.state.section}`)
             .then(res => {
