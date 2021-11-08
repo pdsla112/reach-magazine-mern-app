@@ -75,7 +75,7 @@ if (process.env.NODE_ENV === 'production') {
         if (err) {
             return res.status(500).send("Some error happened! Check it out");
         }
-        res.send(data.replace(<div id="root"></div>, <div id="root">${ReactDOMServer.renderToString(<App />)}</div>));
+        res.send(data.replace('<div id="root"></div>', `<div id="root">${ReactDOMServer.renderToString(<App />)}</div>`));
     });
     /*
     app.use(express.static("client/build"));
