@@ -49,5 +49,6 @@
   "engines": {
     "node": "12.16.2",
     "npm": "7.5.4"
-  }
+  },
+  "type": "module"
 }
