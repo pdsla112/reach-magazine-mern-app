@@ -16,6 +16,11 @@ import ReactDOMServer from 'react-dom/server';
 
 import App from './client/src/App';
 
+require('@babel/register')({
+    ignore: [/(node_module)/],
+    presets: ['@babel/preset-env', '@babel/preset-react']
+})
+
 require('dotenv').config();
 
 function getRandomSecret() {
