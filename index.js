@@ -22,23 +22,15 @@ function getRandomSecret() {
 
 app.use('/images', express.static(path.join(__dirname, '/images')));
 
-// app.use(helmet());
 app.use(helmet({
     contentSecurityPolicy: false,
   }));
 
-// app.use(cors({
-//     origin: 'https://dry-cove-41912.herokuapp.com',
-//     credentials: true 
-// }));
 app.use(cors({
     origin: "http://localhost:3000",
     credentials: true
 }));
-// app.use(cors({
-//     origin: 'localhost/:1',
-//     credentials: true 
-// }));
+
 app.use(bodyParser.json());
 
 const store = new MongoDBStore({
@@ -74,17 +66,6 @@ if (process.env.NODE_ENV === 'production') {
         res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
     });
 }
-
-// app.use(express.static(path.join(__dirname, './client/build')));
-
-// app.get('*', function(_, res) {
-//   res.sendFile(path.join(__dirname, './client/build/index.html'), function(err) {
-//     if (err) {
-//       res.status(500).send(err)
-//     }
-//   })
-// });
-
 
 const PORT = process.env.PORT || 4000;
 

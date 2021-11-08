@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import {BrowserRouter as Router} from "react-router-dom";
 
-ReactDOM.renderToString(
+ReactDOM.hydrate(
   <Router>
     <React.StrictMode>
       <App/>
