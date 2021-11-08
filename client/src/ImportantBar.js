@@ -1,5 +1,5 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import NavLink from "react-router-dom";
 import axios from "axios";
 
 class ImportantBar extends React.Component {

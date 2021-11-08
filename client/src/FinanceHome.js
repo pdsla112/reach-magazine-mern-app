@@ -1,5 +1,5 @@
 import React from "react";
-import { withRouter } from "react-router-dom";
+import withRouter from "react-router-dom";
 import HomeSection from "./HomeSection";
 
 class FinanceHome extends React.Component {

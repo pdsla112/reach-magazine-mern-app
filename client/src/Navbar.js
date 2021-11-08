@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, withRouter } from "react-router-dom";
+import {NavLink, withRouter} from "react-router-dom";
 import styled from "styled-components";
 import facebookLogo from "./assets/facebook-logo.svg";
 import instagramLogo from "./assets/instagram-logo.svg";

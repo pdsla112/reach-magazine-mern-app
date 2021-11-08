@@ -3,7 +3,7 @@ import SectionHeader from "./SectionHeader";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import axios from "axios";
-import { withRouter } from "react-router-dom";
+import withRouter from "react-router-dom";
 
 class IndividualArticle extends React.Component {
     constructor(props) {
