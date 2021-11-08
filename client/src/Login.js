@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import LoginCarousel from "./LoginCarousel";
 import loginBackground from "./assets/login-background-2.jpg";
 import axios from "axios";
-import withRouter from "react-router-dom"; 
+import {withRouter} from "react-router-dom"; 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

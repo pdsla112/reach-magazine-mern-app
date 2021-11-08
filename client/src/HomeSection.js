@@ -1,7 +1,7 @@
 import React from "react";
 import arrow from "./assets/right-arrow.svg";
 import axios from "axios";
-import withRouter from "react-router-dom";
+import {withRouter} from "react-router-dom";
 
 class HomeSection extends React.Component {
     _isMounted = false;

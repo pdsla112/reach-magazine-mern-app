@@ -1,6 +1,6 @@
 import axios from "axios";
 import React from "react";
-import withRouter from "react-router-dom";
+import {withRouter} from "react-router-dom";
 
 class Catalog extends React.Component {
     constructor(props) {
