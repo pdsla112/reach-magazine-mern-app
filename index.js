@@ -16,10 +16,12 @@ const ReactDOMServer = require('react-dom/server');
 
 const App = require('./client/src/App');
 
+/*
 require('@babel/register')({
     ignore: [/(node_module)/],
     presets: ['@babel/preset-env', '@babel/preset-react']
 })
+*/
 
 require('dotenv').config();
 

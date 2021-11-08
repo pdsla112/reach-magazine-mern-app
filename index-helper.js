@@ -1,6 +1,5 @@
 
-/*
-import React from 'react';
+require('ignore-styles')
 
 require('@babel/register')({
     ignore: [/(node_module)/],
@@ -8,4 +7,3 @@ require('@babel/register')({
 })
 
 require('./index')
-*/
