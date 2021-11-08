@@ -14,7 +14,7 @@ const MongoDBStore = require("connect-mongodb-session")(session);
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 
-import App from './client/build/App';
+import App from './client/src/App';
 
 require('dotenv').config();
 
@@ -66,7 +66,7 @@ app.use('/', articleRoutes);
 app.use('/', userRoutes);
 
 if (process.env.NODE_ENV === 'production') {
-    fs.readFile(path.resolve('./client/build/index.html'), 'utf-8', (err, data) => {
+    fs.readFile(path.resolve(__dirname, "client", "build", "index.html"), 'utf-8', (err, data) => {
         if (err) {
             return res.status(500).send("Some error happened! Check it out");
         }
@@ -85,7 +85,7 @@ if (process.env.NODE_ENV === 'production') {
     */
 }
 
-app.use(express.static("./client/build"));
+app.use(express.static("client/build"));
 
 const PORT = process.env.PORT || 4000;
 
