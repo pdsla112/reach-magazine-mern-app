@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "backend": "nodemon index.js",
+    "start": "node index-helper.js",
+    "backend": "nodemon index-helper.js",
     "frontend": "npm run front --prefix client",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=true npm install --prefix client && npm run build --prefix client",
     "build": "cross-env INLINE_RUNTIME_CHUNK=false react-scripts build",
