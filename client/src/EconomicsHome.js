@@ -3,16 +3,6 @@ import { withRouter } from "react-router-dom";
 import HomeSection from "./HomeSection";
 
 class EconomicsHome extends React.Component {
-    _isMounted = false;
-
-    async componentDidMount() {
-        this._isMounted = true;
-    }
-    
-    componentWillUnmount() {
-        this._isMounted = false;
-    }
-
     render() {
         return(
             <HomeSection section="economics"/>
