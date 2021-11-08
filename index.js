@@ -11,8 +11,6 @@ const randomInt = require("random-int");
 const session = require("express-session");
 const MongoDBStore = require("connect-mongodb-session")(session);
 
-//const { App } = require( './client/src/App.js' ); 
-
 require('dotenv').config();
 
 function getRandomSecret() {
@@ -65,15 +63,7 @@ app.use('/', userRoutes);
 if (process.env.NODE_ENV === 'production') {
     app.use(express.static("client/build"));
     app.get('*', (req, res) => {
-        let indexHTML = fs.readFileSync( path.resolve( __dirname, "client", "build", "index.html" ), {
-            encoding: 'utf8',
-        } );
-        let appHTML = ReactDOMServer.renderToString( <App /> );
-        indexHTML = indexHTML.replace( '<div id="app"></div>', `<div id="app">${ appHTML }</div>` );
-        res.contentType( 'text/html' );
-        res.status( 200 );
-        return res.send( indexHTML );
-        //res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+        res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
     });
 }
 
